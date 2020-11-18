@@ -38,13 +38,16 @@ To run the tests, run ``kedro test``.
 from pathlib import Path
 
 import pytest
-
-from {{cookiecutter.python_package}}.run import ProjectContext
+from kedro.framework.context import KedroContext, load_context
 
 
 @pytest.fixture
-def project_context():
-    return ProjectContext(str(Path.cwd()))
+def project_context(mocker):
+    # Don't configure the logging module. If it's configured, tests that
+    # check logs using the ``caplog`` fixture depend on execution order.
+    mocker.patch.object(KedroContext, "_setup_logging")
+
+    return load_context(Path.cwd())
 
 
 class TestProjectContext:
