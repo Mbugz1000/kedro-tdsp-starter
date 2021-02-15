@@ -1,15 +1,15 @@
-# The `kedro-starter-pandas-iris` Kedro starter
+# The `kedro-tdsp-starter` Kedro starter 
 
 ## Introduction
 
-The code in this repository demonstrates best practice when working with Kedro. It contains a Kedro starter template with some initial configuration and an example pipeline, and originates from the [Kedro Iris dataset example](https://kedro.readthedocs.io/en/stable/02_get_started/05_example_project.html).
+The code in this repository demonstrates best practice when working with Kedro. It contains a Kedro starter template with some initial configuration and documentation from the [Azure TDSP project](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/overview).
 
 
 ### An example machine learning pipeline using only native `Kedro`
 
 ![](./images/iris_pipeline.png)
 
-This Kedro starter uses the simple and familiar [Iris dataset](https://www.kaggle.com/uciml/iris). It contains the code for an example machine learning pipeline that trains a random forest classifier to classify an iris. 
+Above is an example pipeline using the common iris dataset. It contains the code for an example machine learning pipeline that trains a random forest classifier to classify an iris. 
 
 The pipeline includes two modular pipelines: one for data engineering and one for data science.
 
