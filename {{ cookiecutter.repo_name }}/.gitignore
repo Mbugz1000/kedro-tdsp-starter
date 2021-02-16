@@ -127,7 +127,8 @@ target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb  # You should pair your Notebook with Rmd and commit Rmd instead.
+*.ipynb  
+# You should pair your Notebook with Rmd and commit Rmd instead.
 
 # IPython
 .ipython/profile_default/history.sqlite
