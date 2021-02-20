@@ -2,9 +2,13 @@ black==v19.10b0
 flake8>=3.7.9, <4.0
 ipython~=7.0
 isort>=4.3.21, <5.0
-jupyter~=1.0
-jupyter_client>=5.1, <7.0
-jupyterlab==0.31.1
+jupyter_client==6.1.7
+jupyter_core==4.7.1
+jupyter_server== 1.2.2
+jupyterlab==3.0.5
+jupyterlab_pygments==0.1.2
+jupyterlab_server==2.1.2
+jupytext==1.9.1
 kedro[pandas.CSVDataSet,pandas.ExcelDataSet]=={{ cookiecutter.kedro_version }}
 nbstripout==0.3.3
 pytest-cov~=2.5
